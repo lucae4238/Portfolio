@@ -1,13 +1,17 @@
 import styled from 'styled-components';
+import { keyframes } from 'styled-components'
 
 export const Container = styled.div`
 width: 100vw;
-height: 70vh;
-background: purple;
+min-height: 80vh;
+height: max-content;
+
+/* background: purple; */
 display: grid;
 margin-top: 60px;
 margin-bottom: auto;
 justify-content: center;
+border: 1px solid white;
 `;
 
 export const Content = styled.div`
@@ -20,7 +24,8 @@ border: 1px solid black;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr;
 grid-template-areas:"info img" ;
-background: orange;
+/* background: orange; */
+border: 1px solid white;
 align-content: center;
 align-items: center;
 align-self: center;
@@ -36,7 +41,7 @@ grid-template-areas: "info"
 export const ContainerImg = styled.div`
 grid-area: img;
 justify-content: center;
-background: green;
+/* background: green; */
 `;
 
 export const CustomImg = styled.img`
@@ -48,10 +53,37 @@ margin:auto;
 
 export const Info = styled.div`
 grid-area: info;
-border: 1px solid black;
+border: 1px solid white;
 margin: 3rem; 
 align-self: baseline;
 height: max-content;
-position: relative;
 `;
 
+
+
+
+
+export const rotate = keyframes`
+        0% {
+            content: "Fullstack Developer";
+        }
+        25%{
+          content: "PERN Stack Developer"
+        }
+  
+        50% {
+            content: "Frontend Developer";
+        }
+  
+        75% {
+            content: "Developer";
+        }
+`;
+export const DynamicText = styled.h3`
+color: purple;
+:before {
+        content: "Fullstack Developer";
+        animation: ${rotate} infinite 11s;
+        padding-left: 10px;
+    }
+`;

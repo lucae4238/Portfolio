@@ -1,10 +1,11 @@
 import React from 'react'
 import {Container} from './styles'
+import { Header } from '../../../../styled-components'
 
 const AboutMe = () => {
   return (
     <Container>
-      <h1>about me section</h1>
+      <Header>Get to know me</Header>
     </Container>
   )
 }
