@@ -11,7 +11,6 @@ display: grid;
 margin-top: 60px;
 margin-bottom: auto;
 justify-content: center;
-border: 1px solid white;
 `;
 
 export const Content = styled.div`

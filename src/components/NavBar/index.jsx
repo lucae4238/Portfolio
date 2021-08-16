@@ -1,15 +1,23 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
-import { GridContainer } from './styles'
+import { Link } from 'react-router-dom'
+import { GridContainer, Div } from './styles'
 
 const NavBar = () => {
   return (
     <GridContainer container>
-      logo 
-      <h4>home</h4>
-      <h4>about</h4>
-      <h4>projects</h4>
-      <h4>resume</h4>
+      logo
+      <Div>
+
+      <Link to="/">
+        <h4>home</h4>
+      </Link>
+      <Link to="/about">
+        <h4>about</h4>
+      </Link>
+      <Link to="/projects">
+        <h4>projects</h4>
+      </Link>
+      </Div>
     </GridContainer>
   )
 }
