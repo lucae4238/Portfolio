@@ -6,7 +6,7 @@ font-size: 60px
 export const Container = styled.div`
 display: flex;
 flex-direction: column;
-background: red;
+background: none;
 padding-top: 61px;
 height: max-content;
 `;

@@ -6,7 +6,7 @@ display: flex;
 flex-direction: column;
 /* background-color: blue; */
 /* min-height: 190vh; */
-height: max-content;
+height: fit-content;
 justify-content: center;
 /* height: 180vh */
 

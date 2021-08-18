@@ -1,9 +1,15 @@
 import styled from 'styled-components';
+import { Header } from '../../../../styled-components';
 
+export const CenteredHeader = styled(Header)`
+align-self: center;
+`;
 
 export const Container = styled.div`
-width: 100vw;
-height: 80vh;
+/* width: 100vw; */
+height: max-content;
+min-height: 80vh;
+min-width: fit-content;
 background: purple;
 justify-content: center;
 display: grid;
@@ -13,7 +19,7 @@ display: grid;
 export const Content = styled.div`
 /* max-width: 80%; */
 display: grid;
-max-height: 90vh;
+min-width: fit-content;
 height: max-content;
 width: 80vw;
 border: 1px solid black;
@@ -25,6 +31,7 @@ border: 1px solid white;
 align-content: center;
 align-items: center;
 align-self: center;
+padding: 3rem;
 
 @media screen and (max-width: 1200px){
 grid-template-columns: 1fr;
@@ -35,9 +42,15 @@ grid-template-areas: "info"
 `;
 
 export const TextArea = styled.div`
-grid-area: info
+grid-area: info;
+background: orange;
+margin: 3rem;
+border: 1px solid black;
 `;
 
 export const ImageContainer = styled.div`
 grid-area: img
+`;
+export const CustomImg = styled.img`
+height: 25rem;
 `;

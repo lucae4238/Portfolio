@@ -3,19 +3,20 @@ import styled from 'styled-components';
 
 export const Content = styled.div`
 background: black;
-max-height: 81vh;
+min-height: 61vh;
 display: grid;
 height: max-content;
 width: 80vw;
 border: 1px solid black;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr;
-grid-template-areas:"info img" ;
+grid-template-areas:"img info" ;
 border: 1px solid white;
 align-content: center;
 align-items: center;
 align-self: center;
 margin: 5rem;
+min-width: fit-content;
 
 @media screen and (max-width: 1200px){
 grid-template-columns: 1fr;
@@ -49,7 +50,7 @@ margin:auto;
 
 export const SkillsDiv = styled.div`
 
-background: orange;
+border: 1px solid white;
 width: 70vw;
 min-width: 30rem;
 display: flex;
@@ -60,7 +61,8 @@ height: max-content;
 margin: 3rem;
 `;
 export const SkillsGrid = styled.div`
-background: blue;
+/* background: blue; */
+border: 1px solid white;
 height: max-content;
 padding: 3rem;
 display:flex;

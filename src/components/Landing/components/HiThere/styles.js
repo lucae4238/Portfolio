@@ -16,7 +16,8 @@ justify-content: center;
 export const Content = styled.div`
 /* max-width: 80%; */
 display: grid;
-max-height: 90vh;
+/* min-height: 90vh; */
+min-width: fit-content;
 height: max-content;
 width: 80vw;
 border: 1px solid black;

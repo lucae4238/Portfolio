@@ -5,7 +5,6 @@ import { GridContainer } from './styles'
 const Footer = () => {
   return (
     <GridContainer container>
-      <h1>Footer</h1>
       <Link to="/" >
       <h3>contact me</h3>
       </Link>

@@ -1,7 +1,8 @@
 import React from 'react'
 import { Container, Header } from '../../styled-components'
-import { ContainerImg, Content, CustomImg, Info, SkillsDiv, SkillsGrid, SkillItem} from './styles'
+import { ContainerImg, Content, CustomImg, Info, } from './styles'
 import CreativePerson from '../../assets/Creative_Person.png'
+import Skills from './components/Skills'
 const About = () => {
   return (
     <Container>
@@ -22,24 +23,7 @@ const About = () => {
           <CustomImg src={CreativePerson} />
         </ContainerImg>
       </Content>
-      <SkillsDiv>
-        <h1>Professional Skillset</h1>
-        <SkillsGrid>
-          <SkillItem>react</SkillItem>
-          <SkillItem>redux</SkillItem>
-          <SkillItem>JS</SkillItem>
-          <SkillItem>TS</SkillItem>
-          <SkillItem>MUI</SkillItem>
-          <SkillItem>HTML</SkillItem>
-          <SkillItem>CSS</SkillItem>
-          <SkillItem>Expres</SkillItem>
-          <SkillItem>Node</SkillItem>
-          <SkillItem>Seque</SkillItem>
-          <SkillItem>Postres</SkillItem>
-          <SkillItem>Git</SkillItem>
-          <SkillItem>scrum</SkillItem>
-        </SkillsGrid>
-      </SkillsDiv>
+      <Skills />
     </Container>
   )
 }
