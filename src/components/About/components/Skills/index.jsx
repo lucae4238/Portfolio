@@ -19,7 +19,7 @@ const Skills = () => {
           <SkillItem>Seque</SkillItem>
           <SkillItem>Postres</SkillItem>
           <SkillItem>Git</SkillItem>
-          <SkillItem>scrum</SkillItem>
+          <SkillItem>SCRUM</SkillItem>
         </SkillsGrid>
       </SkillsDiv>
   )
