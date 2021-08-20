@@ -9,7 +9,6 @@ const Carrousel = ({data}) => {
     setIndex(newIndex)
   }
   return (
-      
     <>
     <S.Arrow position="right" onClick={handleIndex}>
 <p>R</p>
