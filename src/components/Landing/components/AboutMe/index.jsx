@@ -1,6 +1,6 @@
 import React from 'react'
 import IMG from '../../../../assets/Creative_Person.png'
-import { Container, Content, ImageContainer, TextArea, CustomImg, CenteredHeader } from './styles'
+import {  /*LogosDiv,*/ Container, Content, ImageContainer, TextArea, CustomImg, CenteredHeader, ContactDiv } from './styles'
 
 const AboutMe = () => {
   return (
@@ -15,12 +15,16 @@ const AboutMe = () => {
             <p> I exceed the most in Front end development</p>
             <p>I‘m fluent in JavaScript and TypeScript</p>
             <br />
-            <div>
-              <h3>lets get in touch!</h3>
-              linkedIn
-              mail
-              github
-            </div>
+
+            <ContactDiv>
+
+              <h2>lets get in touch!</h2>
+              {/* <LogosDiv>
+                <img width="30px"src={GH} alt="github" />
+                <img src={GM} alt="gmail" />
+                <img src={LI} alt="linkedin" />
+              </LogosDiv> */}
+            </ContactDiv>
           </TextArea>
 
           <ImageContainer>

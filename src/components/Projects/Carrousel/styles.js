@@ -24,6 +24,13 @@ grid-template-rows: 0.5fr 1fr;
 grid-template-areas: "img"
 "info";
 }
+
+/* background: rgba( 95, 3, 103, 0.10 ); */
+/* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+backdrop-filter: blur( 20.0px );
+-webkit-backdrop-filter: blur( 20.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 `;
 
 export const Media = styled.div`
@@ -38,13 +45,20 @@ export const Details = styled.div`
 }; */
 /* max-width: 47.5vw; */
 width: 100%;
-border: 1px   solid white;
+/* border: 1px   solid white; */
 grid-area: info;
 height: 100%;
 display: grid;
 /* margin: auto; */
 justify-items: center;
 grid-template: 1fr 3fr 1fr 1fr /1fr;
+
+
+background: rgba( 0, 0, 0, 0.20 );
+border-radius: 10px;
+border: none;
+border-left: 1px solid rgba( 255, 255, 255, 0.18 );
+
 `;
 
 export const GLink = styled.h1`
@@ -55,11 +69,7 @@ a{
 `;
 
 export const Arrow = styled.div`
-position: absolute;
-top: 50%;
-left: ${props => props.position === 'left' ? '5%' : '92.5%'};
-right: ${props => props.position === 'right' ? '5%' : '92.5%'};
-background: yellow;
+margin:0;
 height: 12rem;
 width: 3rem;
 `;
@@ -70,4 +80,11 @@ border: 1px solid white;
 align-items: center;
 justify-content: center;
 padding: 1rem;
+`;
+
+export const Div = styled.div`
+display: flex; 
+/* flex-direction: column; */
+width: 98vw;
+align-items: center;
 `;

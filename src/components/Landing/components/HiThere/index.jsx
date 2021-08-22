@@ -9,8 +9,8 @@ const HiThere = () => {
     <Container>
       <Content>
         <Info>
-          <Header>Hi There!</Header>
-          <h1>I‘m Luca</h1>
+          <h3>Hello There!</h3>
+          <Header>I‘m Luca</Header>
           <DynamicText />
         </Info>
         <ContainerImg>

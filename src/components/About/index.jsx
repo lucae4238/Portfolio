@@ -1,9 +1,11 @@
 import React from 'react'
 import { Container, Header } from '../../styled-components'
 import { ContainerImg, Content, CustomImg, Info, } from './styles'
+import useResetScroll from '../../common/resetScroll'
 import CreativePerson from '../../assets/Creative_Person.png'
 import Skills from './components/Skills'
 const About = () => {
+  useResetScroll()
   return (
     <Container>
       <Content>

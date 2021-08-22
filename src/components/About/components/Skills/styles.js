@@ -21,6 +21,7 @@ padding: 3rem;
 display:flex;
 flex-wrap: wrap;
 justify-content: center;
+border-radius: 10px;
 
 /* grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr; */
 

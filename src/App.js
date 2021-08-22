@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Landing from './components/Landing';
 import Projects from './components/Projects';
 import About from './components/About';
+
 function App() {
   return (
     <BrowserRouter>

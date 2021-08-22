@@ -12,7 +12,7 @@ const NavBar = () => {
   return (
     <GridContainer container>
       logo
-      <h1>{t('welcome.title')}</h1>
+      <h5>{t('welcome.title')}</h5>
       <button onClick={handleLanguae}>{language}</button>
 
       <Div>

@@ -1,3 +1,4 @@
+import Git from '../assets/git.png'
 
   const techList = [
     {
@@ -46,7 +47,7 @@
     },
     {
       name: "Git", 
-      url: "http://assets.stickpng.com/images/5847f981cef1014c0b5e48be.png", 
+      url:Git, 
     },
   ]
   export default techList

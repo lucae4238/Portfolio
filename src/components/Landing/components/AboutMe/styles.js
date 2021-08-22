@@ -3,6 +3,7 @@ import { Header } from '../../../../styled-components';
 
 export const CenteredHeader = styled(Header)`
 align-self: center;
+margin-top: 10rem;
 `;
 
 export const Container = styled.div`
@@ -14,6 +15,7 @@ min-width: fit-content;
 justify-content: center;
 display: grid;
 margin-bottom: 5rem;
+margin-top: -65px;
 `;
 
 
@@ -44,6 +46,13 @@ export const TextArea = styled.div`
 grid-area: info;
 margin: 3rem;
 border: 1px solid white;
+background: rgba( 95, 3, 103, 0.10 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20.0px );
+-webkit-backdrop-filter: blur( 20.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 1rem;
 `;
 
 export const ImageContainer = styled.div`
@@ -51,4 +60,16 @@ grid-area: img
 `;
 export const CustomImg = styled.img`
 height: 25rem;
+`;
+
+export const ContactDiv = styled.div`
+display: flex;
+margin: 2rem;
+align-self: center;
+flex-direction: column;
+text-align:center;
+`;
+
+export const LogosDiv = styled.div`
+display: flex;
 `;

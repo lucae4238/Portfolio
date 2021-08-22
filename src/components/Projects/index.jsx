@@ -8,7 +8,6 @@ const Projects = () => {
 
 
   useEffect(() => {
-    console.log('here!')
     setTimeout(() => window.scroll(0, 100), 1000)
   })
 

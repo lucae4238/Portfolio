@@ -10,7 +10,7 @@ border: 1px solid black;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr;
 grid-template-areas:"img info" ;
-border: 1px solid white;
+/* border: 1px solid white; */
 align-content: center;
 align-items: center;
 align-self: center;
@@ -28,10 +28,18 @@ grid-template-areas: "info"
 export const Info = styled.div`
 grid-area: info;
 border: 1px solid white;
-height: max-content;
+/* height: max-content; */
+height: 30rem;
 align-items: center;
 justify-content: center;
 margin: 3rem;
+background: rgba( 95, 3, 103, 0.10 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20.0px );
+-webkit-backdrop-filter: blur( 20.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 1rem;
 `;
 
 export const ContainerImg = styled.div`
