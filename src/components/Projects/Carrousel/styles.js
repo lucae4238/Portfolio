@@ -44,7 +44,7 @@ height: 100%;
 display: grid;
 /* margin: auto; */
 justify-items: center;
-grid-template: 1fr 4fr 1fr /1fr;
+grid-template: 1fr 3fr 1fr 1fr /1fr;
 `;
 
 export const GLink = styled.h1`
@@ -62,4 +62,12 @@ right: ${props => props.position === 'right' ? '5%' : '92.5%'};
 background: yellow;
 height: 12rem;
 width: 3rem;
+`;
+
+export const TechArea = styled.div`
+display: flex;
+border: 1px solid white;
+align-items: center;
+justify-content: center;
+padding: 1rem;
 `;

@@ -1,27 +1,25 @@
 import React from 'react'
-import { Header } from '../../../../styled-components'
-import { SkillsDiv, SkillsGrid, SkillItem} from './styles'
+import { SkillsDiv, SkillsGrid, SkillItem, CenteredHeader } from './styles'
+import techList from '../../../../common/techList'
 
 const Skills = () => {
+  console.log(techList)
   return (
-      <SkillsDiv>
-        <Header>Professional Skillset</Header>
-        <SkillsGrid>
-          <SkillItem>react</SkillItem>
-          <SkillItem>redux</SkillItem>
-          <SkillItem>JS</SkillItem>
-          <SkillItem>TS</SkillItem>
-          <SkillItem>MUI</SkillItem>
-          <SkillItem>HTML</SkillItem>
-          <SkillItem>CSS</SkillItem>
-          <SkillItem>Expres</SkillItem>
-          <SkillItem>Node</SkillItem>
-          <SkillItem>Seque</SkillItem>
-          <SkillItem>Postres</SkillItem>
-          <SkillItem>Git</SkillItem>
-          <SkillItem>SCRUM</SkillItem>
-        </SkillsGrid>
-      </SkillsDiv>
+    <SkillsDiv>
+      <CenteredHeader>Professional Skillset</CenteredHeader>
+      <SkillsGrid>
+        {
+          techList.map(element => (
+
+            <SkillItem >
+
+              <h4>{element.name}</h4>
+              <img width={element.name === "CSS" ? "70%" : "100%"} alt={element.name} src={element.url} />
+            </SkillItem>
+          ))
+        }
+      </SkillsGrid>
+    </SkillsDiv>
   )
 }
 

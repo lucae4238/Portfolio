@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { Header } from "../../../../styled-components";
 
 export const SkillsDiv = styled.div`
 
-border: 1px solid white;
+/* border: 1px solid white; */
 width: 70vw;
 min-width: 30rem;
 display: flex;
@@ -26,9 +27,31 @@ justify-content: center;
 `;
 
 export const SkillItem = styled.div`
-background: purple;
+/* border: 1px solid white; */
 display: block;
-width: 10rem;
-height: 10rem;
+max-width: 8rem;
+max-height: 8rem;
 margin: 0.5rem;
+overflow:hidden;
+position: relative;
+/* transition: bottom ease 0.5s; */
+align-items: center;
+h4{
+  bottom: -60px;
+  position: absolute;
+  width: 100%;
+  background:black;
+  transition: bottom ease 0.5s;
+}
+&:hover{
+  h4{
+    bottom: 0px;
+    transition: bottom ease 0.5s;
+      /* display:contents;  */
+    }
+  }
+`;
+
+export const CenteredHeader = styled(Header)`
+align-self: center;
 `;

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 export const Content = styled.div`
 background: black;
-min-height: 61vh;
 display: grid;
 height: max-content;
 width: 80vw;
@@ -15,7 +14,7 @@ border: 1px solid white;
 align-content: center;
 align-items: center;
 align-self: center;
-margin: 5rem;
+margin:  3rem 5rem -2rem 5rem;
 min-width: fit-content;
 
 @media screen and (max-width: 1200px){

@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { keyframes } from 'styled-components'
 
 export const Container = styled.div`
-width: 100vw;
-min-height: 80vh;
+width: 99vw;
+/* min-height: 80vh; */
 height: max-content;
 
 /* background: purple; */
@@ -14,8 +14,10 @@ justify-content: center;
 `;
 
 export const Content = styled.div`
+font-size: 30px;
 /* max-width: 80%; */
 display: grid;
+margin-top: 10rem;
 /* min-height: 90vh; */
 min-width: fit-content;
 height: max-content;
@@ -65,10 +67,10 @@ height: max-content;
 
 export const rotate = keyframes`
         0% {
-            content: "Fullstack Developer";
+            content: "PERN Stack Developer"
         }
         25%{
-          content: "PERN Stack Developer"
+            content: "Fullstack Developer";
         }
   
         50% {
@@ -81,9 +83,10 @@ export const rotate = keyframes`
 `;
 export const DynamicText = styled.h3`
 color: purple;
+margin-left: -10px;
 :before {
-        content: "Fullstack Developer";
-        animation: ${rotate} infinite 11s;
+        content: "PERN Stack Developer";
+        animation: ${rotate} infinite 10s;
         padding-left: 10px;
     }
 `;

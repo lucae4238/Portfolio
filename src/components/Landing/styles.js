@@ -9,6 +9,5 @@ flex-direction: column;
 height: fit-content;
 justify-content: center;
 /* height: 180vh */
-
 /* overflow: scroll; */
 `;
