@@ -11,7 +11,7 @@ const data = [
     `Frontend developed with JavaScript, React and Redux as State Manager. CSS and Styled-Components were used for the styles.`,
     `Backend Developed with NodeJS using Express and PostreSQL + Sequelize.`],
     link: 'https://github.com/lucae4238/PI-Food-FT14a', 
-    technologies: ["React", "Redux", "Styled-Components", "PostgreSQL", "Sequelize", "NodeJS & Express"]
+    technologies: ["JavaScript","React", "Redux", "Styled-Components", "PostgreSQL", "Sequelize", "NodeJS & Express"]
 
   }, 
   {
@@ -24,13 +24,14 @@ const data = [
     technologies: ["React", "Redux", "Material UI", "TypeScript"]
 
   }, 
-  // {
-  //   videoUrl: "",
-  //   title: "Nala Rocks", 
-  //   description: `Development of HR planning module. Including a controlled form, calendar, gantt and table charts, including responsive desgin. 
-  //   Developed using agile methodologies(SCRUM), technologies like JavaScript, React, Redux, Jest Material UI, Sass, and Styled-Components, tranforming the company‘s Figma desgins to React Components.`,
-  //   link: "https://nalarocks.com"
-  // }
+  {
+    imgUrl: mainUrl + "/Nala.png",
+    title: "Nala Rocks", 
+    description: [`Development of HR planning module. Including a controlled form, calendar, gantt and table charts, with responsive desgin.`,
+    `Developed using agile methodologies(SCRUM), technologies like JavaScript, React, Redux, Jest Material UI, Sass, and Styled-Components, tranforming the company‘s Figma desgins to React Components.`],
+    link: "https://nalarocks.com",
+    technologies: ["Git","JavaScript","React", "Redux", "Styled-Components", "Sass", "Jest", "Material UI" ]
+  }
 ]
 
 export default data

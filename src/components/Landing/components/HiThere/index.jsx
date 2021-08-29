@@ -9,7 +9,7 @@ const HiThere = () => {
     <Container>
       <Content>
         <Info>
-          <h3>Hello There!</h3>
+          <h4>Hello There!</h4>
           <Header>I‘m Luca</Header>
           <DynamicText />
         </Info>

@@ -61,7 +61,7 @@ margin:auto;
 
 export const Info = styled.div`
 grid-area: info;
-border: 1px solid white;
+/* border: 1px solid white; */
 margin: 3rem; 
 align-self: baseline;
 height: max-content;

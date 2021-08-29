@@ -35,7 +35,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 export const Media = styled.div`
 /* border: 1px solid white; */
+width: fit-content;
+height: fit-content;
 grid-area: img;
+margin: auto;
 `;
 export const Details = styled.div`
 //para la width usar window.mobileCheck = function() {
@@ -49,7 +52,6 @@ width: 100%;
 grid-area: info;
 height: 100%;
 display: grid;
-/* margin: auto; */
 justify-items: center;
 grid-template: 1fr 3fr 1fr 1fr /1fr;
 
@@ -59,6 +61,14 @@ border-radius: 10px;
 border: none;
 border-left: 1px solid rgba( 255, 255, 255, 0.18 );
 
+h1{
+  align-self: center;
+}
+
+`;
+export const TextArea = styled.div`
+padding: 2vw;
+border: 1px solid white;
 `;
 
 export const GLink = styled.h1`
@@ -76,10 +86,16 @@ width: 3rem;
 
 export const TechArea = styled.div`
 display: flex;
-border: 1px solid white;
+flex-shrink: 0;
+flex-flow: row wrap;
 align-items: center;
 justify-content: center;
 padding: 1rem;
+img{
+  height: 4rem;
+  width: auto;
+  margin: 2px;
+}
 `;
 
 export const Div = styled.div`

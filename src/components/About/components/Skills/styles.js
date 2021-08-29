@@ -41,7 +41,7 @@ h4{
   bottom: -60px;
   position: absolute;
   width: 100%;
-  background:black;
+  background: rgba(0, 0, 0, 0.5);
   transition: bottom ease 0.5s;
 }
 &:hover{
