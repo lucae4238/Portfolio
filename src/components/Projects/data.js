@@ -4,12 +4,14 @@ const data = [
   {
     videoUrl: mainUrl + '/HenryFoodDemo.mp4', 
     title: "Henry Food",
-    description: [`Individual Project developed for SoyHenry‘s Bootcamp.`,
-    `Design and development of a SPA with the following characteristics: 
-    CRUD of recipes (both from a database and an external API), sorting by name or score, 
-    filtering by diet and a controlled and dynamic form to send your own recipe.`,
+    description: [
+    `Individual Project developed for SoyHenry‘s Bootcamp.`,
+    `In this project, the users can search for any recipe (from the backend),
+    sort them by score and alphabetical order, and filter them by diet (vegan, pescatarian, etc), 
+    as well as submitting a recipe of their own.`,
     `Frontend developed with JavaScript, React and Redux as State Manager. CSS and Styled-Components were used for the styles.`,
-    `Backend Developed with NodeJS using Express and PostreSQL + Sequelize.`],
+    `Backend developed using PostreSQL, Express and Sequelize.It fetches data from both Spoonaculars API and its own database.`, 
+    `Aditionally, all the recipes can be clicked to access the recipe‘s details page`],
     link: 'https://github.com/lucae4238/PI-Food-FT14a', 
     technologies: ["JavaScript","React", "Redux", "Styled-Components", "PostgreSQL", "Sequelize", "NodeJS & Express"]
 
@@ -17,9 +19,11 @@ const data = [
   {
     videoUrl: mainUrl + '/GetNewsDemo.mp4',
     title: "Get News!",
-    description: [`SPA developed for personal fullfilment.`,
-    ` It includes: darkmode toggle, dynamic seach input and pagination of results`,
-    `Developed with TypeScript, React and Redux as State Manager. Material UI was used for styling`], 
+    description: [
+    `SPA developed with TypeScript, React, Redux and Material UI.`,
+    `It fetches data from NewsAPI and displays it in a paginated table, which can be sorted by date. 
+    The data can also be filtered in real time with the search bar. The user can visit each news article with the url button`,
+    `It includes a dark mode toggle which is located in top left corner. `], 
     link: 'https://github.com/lucae4238/GetNews',
     technologies: ["React", "Redux", "Material UI", "TypeScript"]
 
@@ -27,8 +31,10 @@ const data = [
   {
     imgUrl: mainUrl + "/Nala.png",
     title: "Nala Rocks", 
-    description: [`Development of HR planning module. Including a controlled form, calendar, gantt and table charts, with responsive desgin.`,
-    `Developed using agile methodologies(SCRUM), technologies like JavaScript, React, Redux, Jest Material UI, Sass, and Styled-Components, tranforming the company‘s Figma desgins to React Components.`],
+    description: [
+    `Frontend Project developed for NALA ROCKS as a final project instance of SoyHenry‘s Bootcamp.`,
+    `Development of HR planning module. Including a controlled form, calendar, gantt and table charts, with responsive desgin.`,
+    `This project was developed with 4 other students using agile methodologies (SCRUM), technologies like JavaScript, React, Redux, Jest (Unit Testing), Material UI, Sass, and Styled-Components, tranforming the company‘s Figma desgins to React Components.`],
     link: "https://nalarocks.com",
     technologies: ["Git","JavaScript","React", "Redux", "Styled-Components", "Sass", "Jest", "Material UI" ]
   }

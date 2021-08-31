@@ -17,7 +17,7 @@ export const Content = styled.div`
 font-size: 30px;
 /* max-width: 80%; */
 display: grid;
-margin-top: 10rem;
+margin-top: 6rem;
 /* min-height: 90vh; */
 min-width: fit-content;
 height: max-content;
@@ -34,8 +34,11 @@ align-self: center;
 @media screen and (max-width: 1200px){
 grid-template-columns: 1fr;
 grid-template-rows: 0.5fr 1fr;
+grid-gap: 10vw;
 grid-template-areas: "info"
 "img";
+width: 90vw;
+font-size: 80px;
 }
 
 background: rgba( 95, 3, 103, 0.10 );
@@ -53,9 +56,14 @@ justify-content: center;
 `;
 
 export const CustomImg = styled.img`
-max-height: 30rem;
+/* width: 60vw; */
+width: 30rem;
 display:block;
 margin:auto;
+
+@media screen and (max-width: 1200px){
+width: 90vw;
+}
 
 `;
 
@@ -92,7 +100,7 @@ color: purple;
 margin-left: -10px;
 :before {
         content: "PERN Stack Developer";
-        animation: ${rotate} infinite 10s;
+        animation: ${rotate} infinite 8s;
         padding-left: 10px;
     }
 `;

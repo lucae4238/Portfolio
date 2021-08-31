@@ -12,6 +12,14 @@ display: flex;
 flex-direction: column;
 height: max-content;
 margin: 3rem;
+
+@media screen and (max-width: 1200px){
+h1{
+  font-size: 80px;
+  width: 100vw;
+  text-align: center;
+}
+}
 `;
 export const SkillsGrid = styled.div`
 /* background: blue; */
@@ -38,7 +46,7 @@ position: relative;
 /* transition: bottom ease 0.5s; */
 align-items: center;
 h4{
-  bottom: -60px;
+  bottom: -70px;
   position: absolute;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -51,6 +59,9 @@ h4{
       /* display:contents;  */
     }
   }
+@media screen and (max-width: 1200px){
+height: 43vw;
+}
 `;
 
 export const CenteredHeader = styled(Header)`

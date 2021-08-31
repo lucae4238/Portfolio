@@ -1,15 +1,20 @@
 import styled from 'styled-components';
+import ReactPlayer from 'react-player'
 
 export const Content = styled.div` /* max-width: 80%; */
 display: grid;
-height: max-content;
+max-height: 85vh;
 /* max-height: 90vh; */
-min-height: 81vh;
+/* min-height: 81vh; */
 width: 85vw;
 border: 1px solid black;
-grid-template-columns: 5fr 3fr;
-grid-template-rows: 1fr;
-grid-template-areas:"img info" ;
+grid-gap: 1vw;
+grid-template-columns: 1fr 1fr ;
+grid-template-rows: 1fr 5fr 0.5fr;
+grid-template-areas:
+"title title"
+"img info"
+"tech tech" ;
 /* background: orange; */
 border: 1px solid white;
 align-content: center;
@@ -17,12 +22,24 @@ align-items: center;
 align-self: center;
 margin: auto;
 margin-bottom: 3rem;
+padding: 20px;
+
+h1{
+  grid-area: title;
+  justify-self: center;
+  align-self: flex-end;
+}
 
 @media screen and (max-width: 1200px){
 grid-template-columns: 1fr;
-grid-template-rows: 0.5fr 1fr;
-grid-template-areas: "img"
-"info";
+grid-template-rows: 0.5fr 2fr 5fr 0.5fr;
+grid-template-areas: 
+"title"
+"img"
+"info"
+"tech";
+height: max-content;
+font-size: 40px;
 }
 
 /* background: rgba( 95, 3, 103, 0.10 ); */
@@ -39,7 +56,20 @@ width: fit-content;
 height: fit-content;
 grid-area: img;
 margin: auto;
+
 `;
+export const StyledReactPlayer = styled(ReactPlayer)`
+@media screen and (max-width: 1200px){
+height: fit-content !important;
+width: 100vw !important;
+justify-self: center;
+position: absolute;
+top: 12%;
+right: -8%
+}
+
+`;
+
 export const Details = styled.div`
 //para la width usar window.mobileCheck = function() {
   /* let check = false;
@@ -49,17 +79,18 @@ export const Details = styled.div`
 /* max-width: 47.5vw; */
 width: 100%;
 /* border: 1px   solid white; */
-grid-area: info;
+/* grid-area: info; */
 height: 100%;
-display: grid;
+display: flex;
+flex-direction: column;
 justify-items: center;
-grid-template: 1fr 3fr 1fr 1fr /1fr;
+/* grid-template: 1fr 3fr 1fr 1fr /1fr; */
 
 
 background: rgba( 0, 0, 0, 0.20 );
-border-radius: 10px;
 border: none;
-border-left: 1px solid rgba( 255, 255, 255, 0.18 );
+grid-area: tech;
+margin-bottom: 1rem;
 
 h1{
   align-self: center;
@@ -68,10 +99,12 @@ h1{
 `;
 export const TextArea = styled.div`
 padding: 2vw;
-border: 1px solid white;
+grid-area: info;
+align-self: baseline;
+/* border: 1px solid white; */
 `;
 
-export const GLink = styled.h1`
+export const GLink = styled.h2`
 align-self: center;
 a{
   color: purple

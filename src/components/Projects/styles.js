@@ -5,9 +5,13 @@ import { Header } from '../../styled-components';
 export const Container = styled.div`
 display: flex;
 flex-direction: column;
-background: red;
+background: none;
 padding-top: 61px;
 height: max-content;
+
+@media screen and (max-width: 1200px){
+padding-top: 20vw;
+}
 `;
 
 

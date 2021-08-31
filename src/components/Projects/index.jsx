@@ -1,6 +1,5 @@
 import React from 'react'
 import { useEffect } from 'react'
-import { Container, } from '../../styled-components'
 import Carrousel from './Carrousel'
 import data from './data'
 import * as S from './styles'
@@ -12,10 +11,10 @@ const Projects = () => {
   })
 
   return (
-    <Container>
+    <S.Container>
       <S.CustomHeader>My Recent Works</S.CustomHeader>
       <Carrousel data={data} />
-    </Container>
+    </S.Container>
   )
 }
 

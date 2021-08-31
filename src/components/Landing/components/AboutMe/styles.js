@@ -3,7 +3,9 @@ import { Header } from '../../../../styled-components';
 
 export const CenteredHeader = styled(Header)`
 align-self: center;
-margin-top: 10rem;
+margin-top: 6rem;
+width: 100%;
+text-align: center;
 `;
 
 export const Container = styled.div`
@@ -32,13 +34,15 @@ grid-template-areas:"img info" ;
 align-content: center;
 align-items: center;
 align-self: center;
-padding: 3rem;
+padding: 2rem;
 
 @media screen and (max-width: 1200px){
 grid-template-columns: 1fr;
 grid-template-rows: 0.5fr 1fr;
 grid-template-areas: "info"
 "img";
+width: 100vw;
+padding: 0;
 }
 `;
 
@@ -52,11 +56,12 @@ backdrop-filter: blur( 20.0px );
 -webkit-backdrop-filter: blur( 20.0px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
-padding: 1rem;
+padding: 2rem;
 `;
 
 export const ImageContainer = styled.div`
-grid-area: img
+grid-area: img;
+justify-self:center;
 `;
 export const CustomImg = styled.img`
 height: 25rem;

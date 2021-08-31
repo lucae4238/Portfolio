@@ -9,11 +9,12 @@ const AboutMe = () => {
       <Container>
         <Content>
           <TextArea>
-            <p>I‘m a Full Stack Developer passionate for tech. Trained in technologies like React, Typescript, Express and agile methodologies like SCRUM.</p>
-            <p>I‘m passionate about everything I do and although I like being as efficient as possible, I‘m also very detail oriented. </p>
-            <p>To me, a problem is an opportunity to <strong>learn</strong> new things.</p>
+            <p>I‘m a Fullstack Developer passionate for tech. Trained in technologies like React, Typescript, Express and agile methodologies like SCRUM.</p>
+            <p>I like to learn new things through challenges and improve myself everyday.
+               What sets me apart is my ability to adapt to any sitution with ease. </p>
             <p> I exceed the most in Front end development</p>
-            <p>I‘m fluent in JavaScript and TypeScript</p>
+            <p>If you need a developer who’s creative, likes to solve problems and always has a smile on his face,
+               you can <strong>contact</strong> me here: </p>
             <br />
 
             <ContactDiv>

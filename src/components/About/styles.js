@@ -22,6 +22,9 @@ grid-template-columns: 1fr;
 grid-template-rows: 0.5fr 1fr;
 grid-template-areas: "info"
 "img";
+width: 100vw;
+margin-top: 10vh;
+grid-gap: 10vw;
 }
 `;
 
@@ -29,7 +32,8 @@ export const Info = styled.div`
 grid-area: info;
 border: 1px solid white;
 /* height: max-content; */
-height: 30rem;
+min-height: 30rem;
+height: fit-content;
 align-items: center;
 justify-content: center;
 margin: 3rem;
@@ -39,19 +43,24 @@ backdrop-filter: blur( 20.0px );
 -webkit-backdrop-filter: blur( 20.0px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
-padding: 1rem;
+padding: 2rem 2rem;
 `;
 
 export const ContainerImg = styled.div`
 grid-area: img;
 justify-content: center;
+justify-self: baseline;
 /* background: green; */
+
 `;
 export const CustomImg = styled.img`
-max-height: 30rem;
+width: 30rem;
 min-height: 25rem;
 display:block;
 margin:auto;
+@media screen and (max-width: 1200px){
+width: 80vw;
+}
 
 `;
 
