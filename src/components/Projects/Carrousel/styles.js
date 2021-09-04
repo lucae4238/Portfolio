@@ -137,7 +137,7 @@ align-items: center;
 justify-content: center;
 padding: 1rem;
 img{
-  height: 4rem;
+  height: 5rem;
   width: auto;
   margin: 2px;
 }

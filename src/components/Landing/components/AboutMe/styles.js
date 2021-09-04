@@ -64,6 +64,7 @@ font-size: 25px
 
 export const ImageContainer = styled.div`
 grid-area: img;
+z-index: 1;
 justify-self:center;
 `;
 export const CustomImg = styled.img`

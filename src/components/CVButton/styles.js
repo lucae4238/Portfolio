@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Container = styled.button`
 position: fixed;
 bottom: 10vh;
-right: 2vw;
+right: 1vw;
 /* width: auto; */
 /* height: 8vh; */
 /* width: 8vh; */
@@ -28,7 +28,7 @@ p{
   margin: 0;
 }
 @media screen and (max-width: 1200px){
-bottom: 5vh;
+bottom: 8vh;
 right:1vw;
 svg{
   font-size: 180px

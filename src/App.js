@@ -7,6 +7,7 @@ import Landing from './components/Landing';
 import Projects from './components/Projects';
 import About from './components/About';
 import CVButton from './components/CVButton';
+import background from './components/Background';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
     <Route path="/about" component={About}/>
     <Route path="/"  component={CVButton}/>
     <Route path="/"  component={Footer}/>
+    {/* <Route path="/"  component={background}/> */}
        </Suspense>
     </BrowserRouter>
   );

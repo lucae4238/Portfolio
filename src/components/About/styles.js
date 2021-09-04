@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Header } from '../../styled-components'
 
 
 export const Content = styled.div`
@@ -17,14 +18,26 @@ align-self: center;
 margin:  3rem 5rem -2rem 5rem;
 min-width: fit-content;
 
+/* background: orange; */
+
+
+
 @media screen and (max-width: 1200px){
+height: inherit;
 grid-template-columns: 1fr;
-grid-template-rows: 0.5fr 1fr;
+/* grid-template-rows: 0.5fr 1fr; */
 grid-template-areas: "info"
 "img";
 width: 100vw;
 margin-top: 10vh;
 grid-gap: 10vw;
+font-size: 30px;
+margin-bottom: 5vh;
+h1{
+  color: orange;
+  font-size: 90px;
+}
+
 }
 `;
 
@@ -32,7 +45,7 @@ export const Info = styled.div`
 grid-area: info;
 border: 1px solid white;
 /* height: max-content; */
-min-height: 30rem;
+/* min-height: 30rem; */
 height: fit-content;
 align-items: center;
 justify-content: center;
@@ -48,6 +61,8 @@ padding: 2rem 2rem;
 
 export const ContainerImg = styled.div`
 grid-area: img;
+z-index: 1;
+height: fit-content;
 justify-content: center;
 justify-self: baseline;
 /* background: green; */

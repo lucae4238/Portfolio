@@ -33,9 +33,8 @@ const data = [
     title: "Nala Rocks", 
     description: [
     `Frontend Project developed for NALA ROCKS as a final project instance of SoyHenry‘s Bootcamp.`,
-    `Development of HR planning module (management of employee‘s time off). Including a controlled form, calendar, gantt and table charts, with responsive desgin.`,
+    `Development of HR planning module (management of employee‘s time off). Including a controlled form, calendar, gantt and table charts (downloadble as excel files), with responsive desgin and full translation to English, Spanish and Portuguese.`,
     `This project was developed with 4 other Henry students using agile methodologies (SCRUM), technologies like JavaScript, React, Redux, Jest (Unit Testing), Material UI, Sass, and Styled-Components, tranforming the company‘s Figma desgins to React Components.`],
-    link: "https://nalarocks.com",
     technologies: ["Git","JavaScript","React", "Redux", "Styled-Components", "Sass", "Jest", "Material UI" , "CSS"]
   }
 ]

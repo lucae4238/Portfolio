@@ -8,5 +8,5 @@ display: flex;
 flex-direction: column;
 background: none;
 padding-top: 61px;
-height: max-content;
+height: fit-content;
 `;

@@ -54,7 +54,9 @@ const Carrousel = ({ data }) => {
         </S.TextArea>
         <S.Details>
           <Techs array={data[index].technologies} />
-          <S.GLink>Check it out <a href={data[index].link}>here!</a></S.GLink>
+{ 
+          data[index].link && <S.GLink>Check it out <a href={data[index].link}>here!</a></S.GLink>
+ }
         </S.Details>
       </S.Content>
       <S.Arrow position="right" onClick={() => handleIndex("right")}>

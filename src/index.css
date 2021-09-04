@@ -5,6 +5,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: black;
   color: white;
+  line-height:1.6;
+  word-spacing:1.6;
 }
 a{
   text-decoration: none;
