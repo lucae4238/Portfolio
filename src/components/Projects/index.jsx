@@ -1,14 +1,16 @@
 import React from 'react'
 import { useEffect } from 'react'
+import useResetScorll from '../../common/resetScroll'
 import Carrousel from './Carrousel'
 import data from './data'
 import * as S from './styles'
 const Projects = () => {
 
 
-  useEffect(() => {
-    setTimeout(() => window.scroll(0, 100), 1000)
-  })
+  useResetScorll()
+  // useEffect(() => {
+  //   setTimeout(() => window.scroll(0, 100), 1000)
+  // })
 
   return (
     <S.Container>

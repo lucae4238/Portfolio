@@ -51,21 +51,19 @@ transition: opacity 1s ease-out;
 -webkit-animation: fadeIn 0.5s;
     animation: fadeIn 0.6s;
 
-background-color: red;
 
 flex-direction: column;
 margin: 0;
-display: flex;
+padding: 0 3vw;
 height: fit-content;
 font-size: 50px;
-padding: 0 3vw;
 text-align: start;
 background-color: rgb(28, 1, 31, 0.5);
 backdrop-filter: blur( 20.0px );
 -webkit-backdrop-filter: blur( 20.0px );
 border-radius: 10px;
-background: orange;
-display: ${props => props.isVisible ? "block" : "none"};
+
+display: ${props => props.isVisible ? "flex" : "none"};
 visibility: ${props => props.isVisible ? "visible" : "hidden"};
 opacity: ${props => props.isVisible ? "100%" : "0"};
 h4{
@@ -103,13 +101,15 @@ export const TranslateDiv = styled.div`
 display: flex;
 justify-content: flex-start;
 align-items: center;
-margin-bottom: -50px;
 img{
   max-height: 3vh;
 }
 
 h4{
   margin-left: 3vw;
+}
+@media screen and (max-width: 1200px){
+  margin-bottom: -25px;
 }
 `;
 

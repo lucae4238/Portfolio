@@ -38,8 +38,8 @@ border-radius: 10px;
 export const SkillItem = styled.div`
 /* border: 1px solid white; */
 display: block;
-max-width: 8rem;
-max-height: 8rem;
+max-width: 7rem;
+max-height: 7rem;
 margin: 0.5rem;
 overflow:hidden;
 position: relative;
@@ -60,7 +60,15 @@ h4{
     }
   }
 @media screen and (max-width: 1200px){
-height: 43vw;
+max-height: 43vw;
+max-width: 43vw;
+font-size: 33px;
+img{
+  width: 20vw;
+}
+h4{
+  bottom: -170px;
+}
 }
 `;
 

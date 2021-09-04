@@ -8,7 +8,7 @@ height: max-content;
 
 /* background: purple; */
 display: grid;
-margin-top: 60px;
+margin-top: 6vh;
 margin-bottom: auto;
 justify-content: center;
 `;
@@ -97,6 +97,7 @@ export const rotate = keyframes`
 `;
 export const DynamicText = styled.h3`
 color: purple;
+height: 3vh;
 margin-left: -10px;
 :before {
         content: "PERN Stack Developer";

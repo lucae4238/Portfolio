@@ -6,7 +6,7 @@ display: grid;
 max-height: 85vh;
 /* max-height: 90vh; */
 /* min-height: 81vh; */
-width: 85vw;
+max-width: 85vw;
 border: 1px solid black;
 grid-gap: 1vw;
 grid-template-columns: 1fr 1fr ;
@@ -17,9 +17,9 @@ grid-template-areas:
 "tech tech" ;
 /* background: orange; */
 border: 1px solid white;
-align-content: center;
+/* align-content: center;
 align-items: center;
-align-self: center;
+align-self: center; */
 margin: auto;
 margin-bottom: 3rem;
 padding: 20px;
@@ -32,13 +32,14 @@ h1{
 
 @media screen and (max-width: 1200px){
 grid-template-columns: 1fr;
-grid-template-rows: 0.5fr 2fr 5fr 0.5fr;
+/* grid-template-rows: 0.5fr 2fr 5fr 0.5fr; */
+grid-template-rows: 0fr 0fr 1fr 0.5fr;
 grid-template-areas: 
 "title"
 "img"
 "info"
 "tech";
-height: max-content;
+max-height: max-content;
 font-size: 40px;
 }
 
@@ -52,20 +53,29 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 export const Media = styled.div`
 /* border: 1px solid white; */
-width: fit-content;
-height: fit-content;
+/* width: 100%;
+height: 100%; */
 grid-area: img;
-margin: auto;
+/* margin: auto; */
+align-self: center;
+justify-self: center;
+text-align-last: center;
+img{
+  justify-self: center;
+}
 
 `;
 export const StyledReactPlayer = styled(ReactPlayer)`
 @media screen and (max-width: 1200px){
-height: fit-content !important;
+/* height: fit-content !important;
 width: 100vw !important;
 justify-self: center;
 position: absolute;
 top: 12%;
-right: -8%
+right: -8% */
+
+height:max-content !important;
+width: auto !important;
 }
 
 `;
@@ -101,6 +111,7 @@ export const TextArea = styled.div`
 padding: 2vw;
 grid-area: info;
 align-self: baseline;
+height:fit-content;
 /* border: 1px solid white; */
 `;
 
@@ -115,6 +126,7 @@ export const Arrow = styled.div`
 margin:0;
 height: 12rem;
 width: 3rem;
+
 `;
 
 export const TechArea = styled.div`
@@ -129,11 +141,18 @@ img{
   width: auto;
   margin: 2px;
 }
+@media screen and (max-width: 1200px){
+img{
+  height: 20vw;
+  margin: 1vw;
+}
+}
 `;
 
 export const Div = styled.div`
 display: flex; 
 /* flex-direction: column; */
 width: 98vw;
+height: fit-content;
 align-items: center;
 `;
