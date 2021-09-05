@@ -5,9 +5,9 @@ const useOutsideClick = (ref, action) => {
       /**
        * Alert if clicked on outside of element
        */
-      function handleClickOutside(event) {
+      async function handleClickOutside(event) {
           if (ref.current && !ref.current.contains(event.target)) {
-              action()
+              await action()
           }
       }
 

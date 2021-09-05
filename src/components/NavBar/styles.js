@@ -4,9 +4,8 @@ import Grid  from '@material-ui/core/Grid';
 export const GridContainer = styled(Grid)`
 display: flex;
 position: fixed;
-background-color: rgb(28, 1, 31, 1);
+background-color: rgb(28, 1, 31, 0.7);
 backdrop-filter: blur( 20.0px );
--webkit-backdrop-filter: blur( 20.0px );
 justify-content: space-between;
 z-index: 1;
 a h4{
