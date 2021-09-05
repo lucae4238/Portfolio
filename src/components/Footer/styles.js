@@ -18,7 +18,6 @@ backdrop-filter: blur( 20.0px );
 height: 7vh;
 font-size: 40px;
 }
-
 `;
 
 export const ContactContainer = styled.div`
@@ -32,17 +31,14 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 font-size: 80px;
-/* border: 1px solid white; */
 border: 1px solid rgba( 255, 255, 255, 0.18 );
-background: rgba(20, 0, 25, 0.9);
+background: rgba(20, 0, 25, 0.95);
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 10px );
-/* -webkit-backdrop-filter: blur( 20px ); */
 @media screen and (max-width: 1200px){
 height: 15vh;
 width: 80vw;
 /* background:red; */
 font-size: 160px;
 }
-
 `;

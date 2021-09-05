@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import { GridContainer, Div, PopUp, StyledDiv, StyledIcon, TranslateDiv } from './styles'
 import { useTranslation } from "react-i18next";
 import GoogleTranslate from "../../assets/Google_Translate.png"
-import MenuIcon from  "../../assets/menu-icon.png"
+import ae from "../../assets/logo.png"
+import MenuIcon from "../../assets/menu-icon.png"
 import useOutsideClick from './useOutsideClick';
 
 const NavBar = () => {
@@ -23,13 +24,19 @@ const NavBar = () => {
   }
   useOutsideClick(mobileMenuRef, () => setIsOpen(false))
 
+  const handleContact = () => {
+    setIsOpen(false)
+    window.scrollTo(0, 10000)
+  }
 
   return (
     <GridContainer container ref={mobileMenuRef}>
       <StyledDiv>
 
-        logo
-        <StyledIcon src={MenuIcon} onClick={() => setIsOpen(isOpen ? false : true)}/>
+        <Link to="/" >
+          <img src={ae} alt="logo" />
+        </Link>
+        <StyledIcon src={MenuIcon} onClick={() => setIsOpen(isOpen ? false : true)} />
       </StyledDiv>
 
       <Div>
@@ -47,30 +54,34 @@ const NavBar = () => {
         <Link to="/projects">
           <h4>projects</h4>
         </Link>
+        <Link>
+          <h4 onClick={handleContact}>Contact</h4>
+        </Link>
       </Div>
 
       <PopUp isVisible={isOpen} ref={mobileMenuRef}>
 
         {/* <PopUp> */}
-          {/* <div>
+        {/* <div>
 
-            <StyledButton onClick={handleLanguae}>{language}</StyledButton>
+<StyledButton onClick={handleLanguae}>{language}</StyledButton>
           </div> */}
         <TranslateDiv onClick={handleLanguae}>
 
           <h4>{language}</h4>
           <img alt="Translate Icon" src={GoogleTranslate} />
         </TranslateDiv>
-          <Link to="/" onClick={() => setIsOpen(false)}>
-            <h4>Home</h4>
-          </Link>
-          <Link to="/about" onClick={() => setIsOpen(false)}>
-            <h4>About</h4>
-          </Link>
-          <Link to="/projects" onClick={() => setIsOpen(false)}>
-            <h4>Projects</h4>
-          </Link>
-        </PopUp>
+        <Link to="/" onClick={() => setIsOpen(false)}>
+          <h4>Home</h4>
+        </Link>
+        <Link to="/about" onClick={() => setIsOpen(false)}>
+          <h4>About</h4>
+        </Link>
+        <Link to="/projects" onClick={() => setIsOpen(false)}>
+          <h4>Projects</h4>
+        </Link>
+        <h4 onClick={handleContact}>Contact</h4>
+      </PopUp>
       {/* </MenuContainer> */}
 
     </GridContainer>

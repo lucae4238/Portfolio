@@ -4,7 +4,7 @@ import Grid  from '@material-ui/core/Grid';
 export const GridContainer = styled(Grid)`
 display: flex;
 position: fixed;
-background-color: rgb(28, 1, 31, 0.7);
+background-color: rgb(28, 1, 31, 0.5);
 backdrop-filter: blur( 20.0px );
 justify-content: space-between;
 z-index: 1;
@@ -23,11 +23,11 @@ a h4{
   }
 }
 
+  /* background-color: rgb(29, 1, 31, 0.1); */
 @media screen and (max-width: 1000px){
   font-size: 30px;
   flex-direction: column;
   min-height: 8vh;
-  background-color: rgb(28, 1, 31, 0.1);
 }
 
 
@@ -57,7 +57,7 @@ padding: 0 3vw;
 height: fit-content;
 font-size: 50px;
 text-align: start;
-background-color: rgb(28, 1, 31, 0.5);
+background-color: none;
 backdrop-filter: blur( 20.0px );
 -webkit-backdrop-filter: blur( 20.0px );
 border-radius: 10px;
@@ -73,8 +73,12 @@ h4{
 
 export const StyledDiv = styled.div`
 display: flex;
+background: none;
 
-  background-color: rgb(28, 1, 31, 1);
+img{
+  margin: 1vh;
+  height: 5vh;
+}
 @media screen and (max-width: 1200px){
   width: 98vw;
   margin:0;

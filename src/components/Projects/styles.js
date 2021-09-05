@@ -7,7 +7,7 @@ display: flex;
 flex-direction: column;
 background: none;
 padding-top: 61px;
-height: max-content;
+height: fit-content;
 
 @media screen and (max-width: 1200px){
 padding-top: 20vw;

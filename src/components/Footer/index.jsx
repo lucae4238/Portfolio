@@ -10,7 +10,7 @@ const Footer = () => {
   const contactRef = useRef(null)
   
   const test = () => {
-  setIsVisible(isVisible ? false : true) 
+  setIsVisible(!isVisible) 
   }
   
   const hook = () => {

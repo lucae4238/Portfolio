@@ -3,14 +3,14 @@ import ReactPlayer from 'react-player'
 
 export const Content = styled.div` /* max-width: 80%; */
 display: grid;
-max-height: 85vh;
+/* max-height: 85vh; */
 /* max-height: 90vh; */
 /* min-height: 81vh; */
-max-width: 85vw;
+/* max-width: 85vw; */
 border: 1px solid black;
 grid-gap: 1vw;
 grid-template-columns: 1fr 1fr ;
-grid-template-rows: 1fr 5fr 0.5fr;
+/* grid-template-rows: 1fr 5fr 0.5fr; */
 grid-template-areas:
 "title title"
 "img info"
@@ -33,13 +33,13 @@ h1{
 @media screen and (max-width: 1200px){
 grid-template-columns: 1fr;
 /* grid-template-rows: 0.5fr 2fr 5fr 0.5fr; */
-grid-template-rows: 0fr 0fr 1fr 0.5fr;
+/* grid-template-rows: 0fr 0fr 1fr 0.5fr; */
 grid-template-areas: 
 "title"
 "img"
 "info"
 "tech";
-max-height: max-content;
+/* max-height: max-content; */
 font-size: 40px;
 }
 
@@ -123,7 +123,7 @@ a{
 `;
 
 export const Arrow = styled.div`
-margin:0;
+margin: ${props => props.position === "left" ? "0 1rem 0 0" : "0 0 0 1rem"};
 height: 12rem;
 width: 3rem;
 
@@ -155,4 +155,5 @@ display: flex;
 width: 98vw;
 height: fit-content;
 align-items: center;
+align-self: center;
 `;
