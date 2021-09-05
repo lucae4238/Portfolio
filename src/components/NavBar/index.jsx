@@ -46,17 +46,15 @@ const NavBar = () => {
           <h4>{language}</h4>
         </TranslateDiv>
         <Link to="/" >
-          <h4>home</h4>
+          <h4>{t("home")}</h4>
         </Link>
         <Link to="/about">
-          <h4>about</h4>
+          <h4>{ t( "about" ) }</h4>
         </Link>
         <Link to="/projects">
-          <h4>projects</h4>
+          <h4>{ t("projects") }</h4>
         </Link>
-        <Link>
-          <h4 onClick={handleContact}>Contact</h4>
-        </Link>
+          <h4 onClick={handleContact}>{ t("contact") }</h4>
       </Div>
 
       <PopUp isVisible={isOpen} ref={mobileMenuRef}>
@@ -72,15 +70,15 @@ const NavBar = () => {
           <img alt="Translate Icon" src={GoogleTranslate} />
         </TranslateDiv>
         <Link to="/" onClick={() => setIsOpen(false)}>
-          <h4>Home</h4>
+          <h4>{ t("home") }</h4>
         </Link>
         <Link to="/about" onClick={() => setIsOpen(false)}>
-          <h4>About</h4>
+          <h4>{ t("about") }</h4>
         </Link>
         <Link to="/projects" onClick={() => setIsOpen(false)}>
-          <h4>Projects</h4>
+          <h4>{ t("projects") }</h4>
         </Link>
-        <h4 onClick={handleContact}>Contact</h4>
+        <h4 onClick={handleContact}>{ t("contact") }</h4>
       </PopUp>
       {/* </MenuContainer> */}
 

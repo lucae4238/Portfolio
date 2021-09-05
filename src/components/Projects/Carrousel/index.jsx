@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+
+import { useTranslation } from "react-i18next";
 import Techs from './Techs'
 import RA from '../../../assets/rightArrow.png'
 import LA from '../../../assets/leftArrow.png'
@@ -28,6 +30,8 @@ const Carrousel = ({ data }) => {
     }
   }
 
+
+  const { t, i18n } = useTranslation('common');
   return (
     <S.Div onMouseDown={(e) => handleMouse(e)}>
       <S.Arrow position="left" onClick={() => handleIndex("left")}>
@@ -55,7 +59,7 @@ const Carrousel = ({ data }) => {
         <S.Details>
           <Techs array={data[index].technologies} />
 { 
-          data[index].link && <S.GLink>Check it out <a href={data[index].link}>here!</a></S.GLink>
+          data[index].link && <S.GLink>{ t("Projects.checkout" ) }<a href={data[index].link}>{ t("Projects.here") }!</a></S.GLink>
  }
         </S.Details>
       </S.Content>

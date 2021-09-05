@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from "react-i18next";
 import { useEffect } from 'react'
 import useResetScorll from '../../common/resetScroll'
 import Carrousel from './Carrousel'
@@ -12,9 +13,11 @@ const Projects = () => {
   //   setTimeout(() => window.scroll(0, 100), 1000)
   // })
 
+
+  const { t } = useTranslation('common');
   return (
     <S.Container>
-      <S.CustomHeader>My Recent Works</S.CustomHeader>
+      <S.CustomHeader>{t("Projects.recent")}</S.CustomHeader>
       <Carrousel data={data} />
     </S.Container>
   )

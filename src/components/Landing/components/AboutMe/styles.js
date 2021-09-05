@@ -73,10 +73,8 @@ height: 25rem;
 
 export const ContactDiv = styled.div`
 display: flex;
-margin: 2rem;
-align-self: center;
-flex-direction: column;
-text-align:center;
+justify-content: center;
+align-items: center;
 `;
 
 export const LogosDiv = styled.div`

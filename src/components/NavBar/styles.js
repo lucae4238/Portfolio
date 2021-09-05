@@ -7,7 +7,7 @@ position: fixed;
 background-color: rgb(28, 1, 31, 0.5);
 backdrop-filter: blur( 20.0px );
 justify-content: space-between;
-z-index: 1;
+z-index: 100;
 a h4{
   text-decoration: none;
   color: white;

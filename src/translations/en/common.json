@@ -1,6 +1,20 @@
 {
   "welcome": {
-      "title": "Welcome to my portfolio"
+      "hello": "Hello there!",
+      "luca": "I‘m Luca"
   },
-  "resume": "Resume"
+  "resume": "Resume",
+  "home": "Home",
+  "projects":"Projects",
+  "contact": "Contact",
+  "contactMe": "Contact me",
+  "about": "About",
+  "Projects": {
+    "recent" : "My Recent Works",
+    "checkout": "Check it out", 
+    "here": " here"
+  },
+  "About": {
+    "skillset": "Professional Skillset"
+  }
 }

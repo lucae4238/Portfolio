@@ -1,17 +1,20 @@
 import React from 'react'
+
+import { useTranslation } from "react-i18next";
 import { SkillsDiv, SkillsGrid, SkillItem, CenteredHeader } from './styles'
 import techList from '../../../../common/techList'
 
 const Skills = () => {
-  console.log(techList)
+
+  const { t, i18n } = useTranslation('common');
   return (
     <SkillsDiv>
-      <CenteredHeader>Professional Skillset</CenteredHeader>
+      <CenteredHeader>{ t("About.skillset") }</CenteredHeader>
       <SkillsGrid>
         {
           techList.map(element => (
 
-            <SkillItem >
+            <SkillItem key={element.name} >
 
               <h4>{element.name}</h4>
               <img width={element.name === "CSS" ? "70%" : "100%"} alt={element.name} src={element.url} />

@@ -29,6 +29,12 @@ padding: 3rem;
 display:flex;
 flex-wrap: wrap;
 justify-content: center;
+background: rgba( 95, 3, 103, 0.10 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20.0px );
+-webkit-backdrop-filter: blur( 20.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 border-radius: 10px;
 
 /* grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr; */

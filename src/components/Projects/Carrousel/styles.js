@@ -97,7 +97,7 @@ justify-items: center;
 /* grid-template: 1fr 3fr 1fr 1fr /1fr; */
 
 
-background: rgba( 0, 0, 0, 0.20 );
+/* background: rgba( 0, 0, 0, 0.20 ); */
 border: none;
 grid-area: tech;
 margin-bottom: 1rem;
@@ -131,6 +131,7 @@ width: 3rem;
 
 export const TechArea = styled.div`
 display: flex;
+background: none;
 flex-shrink: 0;
 flex-flow: row wrap;
 align-items: center;
@@ -139,7 +140,7 @@ padding: 1rem;
 img{
   height: 5rem;
   width: auto;
-  margin: 2px;
+  margin: 5px;
 }
 @media screen and (max-width: 1200px){
 img{

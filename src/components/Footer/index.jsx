@@ -1,36 +1,26 @@
 import React, { useState, useRef } from 'react'
+import { useTranslation } from "react-i18next";
 import useOutSideClick from "../NavBar/useOutsideClick"
-import GitHub from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import MailIcon from '@material-ui/icons/Mail';
-import { Container, ContactContainer } from './styles'
+import Contact from "../Contact"
+import { Container } from './styles'
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false)
+  const { t, i18n } = useTranslation('common');
   const contactRef = useRef(null)
-  
-  const test = () => {
-  setIsVisible(!isVisible) 
-  }
-  
-  const hook = () => {
-    setIsVisible(false)
-  }
-  
-  useOutSideClick(contactRef, hook)
+
+  useOutSideClick(contactRef, () => setIsVisible(false))
+
+
   return (
     <Container ref={contactRef} >
       {
         isVisible &&
-        <ContactContainer >
-          <GitHub onClick={() => window.open( "https://github.com/lucae4238", "_blank")} fontSize="inherit" />
-          <LinkedInIcon onClick={() => window.open( "https://www.linkedin.com/in/luca-casasola/", "_blank")} fontSize="inherit" />
-          <MailIcon onClick={() => window.open( "mailto:lucacasasola82@gmail.com", "_blank")} fontSize="inherit" />
-        </ContactContainer>
+        <Contact />
       }
-      <div ref={contactRef} onClick={test}>
+      <div ref={contactRef} onClick={() => setIsVisible(!isVisible)}>
 
-        <h3 >contact me</h3>
+        <h3 >{t("contactMe")}</h3>
       </div>
 
     </Container>

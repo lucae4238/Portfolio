@@ -16,6 +16,11 @@
     overflow: hidden;
     z-index: -10;
 }
+@media (prefers-reduced-motion) {
+    .background{
+        display: none;
+    }
+  }
 
 .background span {
     width: 10vmin;
