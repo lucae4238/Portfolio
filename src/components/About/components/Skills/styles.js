@@ -43,7 +43,7 @@ border-radius: 10px;
 
 export const SkillItem = styled.div`
 /* border: 1px solid white; */
-display: block;
+display: flex;
 max-width: 7rem;
 max-height: 7rem;
 margin: 0.5rem;
@@ -55,8 +55,10 @@ h4{
   bottom: -70px;
   position: absolute;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   transition: bottom ease 0.5s;
+backdrop-filter: blur( 20.0px );
+-webkit-backdrop-filter: blur( 20.0px );
 }
 &:hover{
   h4{

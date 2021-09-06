@@ -15,7 +15,17 @@
     "here": " aquí"
   },
   "About": {
-    "skillset": "Habilidades Profesionales"
+    "title": "¿Quién es Luca?",
+    "skillset": "Habilidades Profesionales",
+    "1": "Soy un desarrollador Fullstack buscando mejorar todos los días.",
+    "2": "Me apasiona todo lo que hago y aunque me gusta ser lo más eficiente posible, también soy muy detallista. Para mí, un problema es una oportunidad de aprender cosas nuevas.",
+    "list": {
+      "title": "Las áreas que mas me interesan son: ",
+      "1": "Desarrollo Frontend",
+      "2": "Diseño UX",
+      "3": "Diseño A11y",
+      "4": "Mientras tenga un equipo, ¡donde sea!"
+    }
   },
   "Landing":{
     "header": "Conóceme",

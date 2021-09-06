@@ -15,7 +15,17 @@
     "here": " here"
   },
   "About": {
-    "skillset": "Professional Skillset"
+    "title": "Who‘s Luca?",
+    "skillset": "Professional Skillset",
+    "1": "I‘m a Fullstack developer looking to improve myself everyday",
+    "2": "I‘m passionate about everything I do and although I like being as efficient as possible, I‘m also very detail oriented. To me, a problem is an opportunity to learn new things.",
+    "list": {
+      "title": "the areas that intrest me the most are: ",
+      "1": "Frontend development",
+      "2": "UX Design",
+      "3": "A11y Design",
+      "4": "Anywhere as long as I have a team!"
+    }
   },
   "Landing":{
     "header": "Get to know me",
