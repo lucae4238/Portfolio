@@ -27,7 +27,7 @@ function App() {
          </Switch>
     <Route path="/"  component={CVButton}/>
     <Route path="/"  component={Footer}/>
-    {/* { isBackground && <Route path="/"  component={background}/> } */}
+    { isBackground && <Route path="/"  component={background}/> }
        </Suspense>
     </BrowserRouter>
   );
