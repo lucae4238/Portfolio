@@ -20,7 +20,6 @@ function App() {
        <Suspense fallback="loading">
     <Route path="/"  render={() => <NavBar setIsBackground={setIsBackground} isBackground={isBackground}/>}/>
          <Switch>
-
     <Route exact path="/"  component={Landing}/>
     <Route path="/projects" component={Projects}/>
     <Route path="/about" component={About}/>
@@ -28,7 +27,7 @@ function App() {
          </Switch>
     <Route path="/"  component={CVButton}/>
     <Route path="/"  component={Footer}/>
-    { isBackground && <Route path="/"  component={background}/> }
+    {/* { isBackground && <Route path="/"  component={background}/> } */}
        </Suspense>
     </BrowserRouter>
   );

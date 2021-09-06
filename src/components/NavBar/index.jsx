@@ -41,7 +41,7 @@ const NavBar = (props) => {
       </StyledDiv>
 
       <Div>
-        <h4 onClick={() => setIsBackground(!isBackground)}>Toggle Background</h4>
+        <h4 onClick={() => setIsBackground(!isBackground)}>{isBackground ? t("backgroundOn") :t("backgroundOff")}</h4>
         <TranslateDiv onClick={handleLanguae}>
 
           <img alt="Translate Icon" src={GoogleTranslate} />
@@ -61,7 +61,7 @@ const NavBar = (props) => {
 
       <PopUp isVisible={isOpen} ref={mobileMenuRef}>
 
-        <h4 className="backgroundToggle"onClick={() => setIsBackground(!isBackground)}>Toggle Background</h4>
+        <h4 className="backgroundToggle"onClick={() => setIsBackground(!isBackground)}>{isBackground ? t("backgroundOn") :t("backgroundOff")}</h4>
         {/* <PopUp> */}
         {/* <div>
 

@@ -3,6 +3,8 @@
     "hello": "Hola!",
     "luca": "Soy Luca"
   },
+  "backgroundOn": "Fondo Activado",
+  "backgroundOff": "Fondo Desctivado",
   "resume": "Curriculum",
   "home": "Inicio",
   "projects":"Proyectos",
@@ -18,7 +20,7 @@
     "title": "¿Quién es Luca?",
     "skillset": "Habilidades Profesionales",
     "1": "Soy un desarrollador Fullstack buscando mejorar todos los días.",
-    "2": "Me apasiona todo lo que hago y aunque me gusta ser lo más eficiente posible, también soy muy detallista. Para mí, un problema es una oportunidad de aprender cosas nuevas.",
+    "2": "Me apasiona todo lo que hago y aunque me gusta ser lo más eficiente posible, también soy muy detallista. Para mí, un problema es una oportunidad para aprender cosas nuevas.",
     "list": {
       "title": "Las áreas que mas me interesan son: ",
       "1": "Desarrollo Frontend",

@@ -3,6 +3,8 @@
       "hello": "Hello there!",
       "luca": "I‘m Luca"
   },
+  "backgroundOn": "Background On",
+  "backgroundOff": "Background Off",
   "resume": "Resume",
   "home": "Home",
   "projects":"Projects",

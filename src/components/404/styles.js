@@ -12,6 +12,7 @@ export const Container = styled.div`
   }
   @media screen and (max-width: 1000px) {
     padding-top: 10vh;
+    height: 75vh;
     align-items: flex-start;
     img {
       max-width: 90vw;
