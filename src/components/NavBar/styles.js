@@ -68,6 +68,9 @@ opacity: ${props => props.isVisible ? "100%" : "0"};
 h4{
   margin: 2vh;
 }
+.backgroundToggle{
+  margin-left: 30px;
+}
 `;
 
 
@@ -122,6 +125,7 @@ justify-self: flex-end;
 justify-content: space-around;
 min-width: 50vw;
 align-items: center;
+
 
 @media screen and (max-width: 1200px){
 display: none;

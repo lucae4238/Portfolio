@@ -7,7 +7,8 @@ import ae from "../../assets/logo.png"
 import MenuIcon from "../../assets/menu-icon.png"
 import useOutsideClick from './useOutsideClick';
 
-const NavBar = () => {
+const NavBar = (props) => {
+  const {setIsBackground, isBackground} = props
   const { t, i18n } = useTranslation('common');
   const [language, setLanguage] = useState("English")
   const mobileMenuRef = useRef(null)
@@ -40,6 +41,7 @@ const NavBar = () => {
       </StyledDiv>
 
       <Div>
+        <h4 onClick={() => setIsBackground(!isBackground)}>Toggle Background</h4>
         <TranslateDiv onClick={handleLanguae}>
 
           <img alt="Translate Icon" src={GoogleTranslate} />
@@ -59,6 +61,7 @@ const NavBar = () => {
 
       <PopUp isVisible={isOpen} ref={mobileMenuRef}>
 
+        <h4 className="backgroundToggle"onClick={() => setIsBackground(!isBackground)}>Toggle Background</h4>
         {/* <PopUp> */}
         {/* <div>
 
