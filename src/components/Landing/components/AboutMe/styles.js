@@ -64,7 +64,6 @@ font-size: 25px
 
 export const ImageContainer = styled.div`
 grid-area: img;
-z-index: 1;
 justify-self:center;
 @media screen and (max-width: 1200px){
 margin-top: 5vh;

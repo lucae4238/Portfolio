@@ -30,7 +30,6 @@ export const Content = styled.div`
     font-size: 30px;
     margin-bottom: 5vh;
     h1 {
-      color: orange;
       font-size: 90px;
     }
   }
