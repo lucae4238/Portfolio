@@ -9,6 +9,7 @@ backdrop-filter: blur( 20.0px );
 justify-content: space-between;
 z-index: 100;
 a h4{
+  cursor: pointer;
   text-decoration: none;
   color: white;
   transform-origin: bottom right;
@@ -125,6 +126,17 @@ justify-self: flex-end;
 justify-content: space-around;
 min-width: 50vw;
 align-items: center;
+h4{
+  cursor: pointer;
+  :hover{
+    text-decoration: underline;
+    text-decoration-color: rebeccapurple;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+    transform: scaleX(1);
+  transform-origin: bottom left;;
+  }
+}
 
 
 @media screen and (max-width: 1200px){
