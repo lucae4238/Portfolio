@@ -6,7 +6,7 @@ import { Container } from './styles'
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false)
-  const { t, i18n } = useTranslation('common');
+  const { t } = useTranslation('common');
   const contactRef = useRef(null)
 
   useOutSideClick(contactRef, () => setIsVisible(false))

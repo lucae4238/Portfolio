@@ -6,7 +6,7 @@ const Techs = ({ array }) => {
   return (
     <TechArea>
       {array && techList.map(e => (
-        array.includes(e.name) && <img width="15%" src={e.url} alt={e.name} />
+        array.includes(e.name) && <img key={e.url}width="15%" src={e.url} alt={e.name} />
       ))}
     </TechArea>
   )

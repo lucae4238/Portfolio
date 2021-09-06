@@ -16,6 +16,36 @@
   },
   "About": {
     "skillset": "Habilidades Profesionales"
-  }
+  },
+  "Landing":{
+    "header": "Conóceme",
+    "about1": "Soy un Desarrollador FullStack apasionado por la tecnología. Con conocimientos en tecnologias como React, TypeScript, Express y metodologías ágiles como SCRUM.",
+    "about2.1": "Me gusta aprender cosas nuevas a través de desafíos y ",
+    "about2.2": "mejorar",
+    "about2.3": " todos los días. Lo que me distingue del resto es mi habilidad para adaptarme a cualquier situacíon sin problema.",
+    "about3": "Me destaco mas en el desarrollo de Frontend",
+    "about4.1": "Si necesitas a un desarrollador que sea ",
+    "about4.2": "creativo",
+    "about4.3": ", le guste resolver problemas y siempre esté sonriendo, puedes ",
+    "about4.4": "contactarme ",
+    "about4.5": "aquí: "
+  }, 
+  "Henry Food":{
+   "1": "Proyecto individual desarrollado para el bootcamp SoyHenry",
+   "2": "En este proyecto, el usuario puede buscar cualquier receta (del backend), ordernarlas por puntuación y orden alfabético, y filtrarlas por tipo de dieta (vegana, apto para celíacos, etc), y subir su propia receta a través de un formulario controlado. ",
+   "3" :"Adicionalmente, todoas las recetas pueden ser clickeadas y se accederá a la pagina de detalles de la receta.",
+   "4": "Frontend desarrollado usando JavaScript, React y Redux. CSS y Styled-Components fueron usados para los estilos.",
+   "5": "Backend desarrollado ysando PostreSQL, Express y Sequelize, devuelve información de la API de Spoonaculars y su propia base de datos. "
+ },
+ "Get News!": {
+   "1": "SPA desarrollada con TypeScript, React, Redux y Material UI.",
+    "2": "Trae noticias de la NewsAPI y la muestra en una tabla paginada que puede ser ordenada por fecha. La información también puede ser filtrada dinámicamente con la barra de búsqueda. El usuario puede visitar cada árticulo con el botón de URL.",
+    "3": "Incluye un modo oscuro que puede ser activado en al esquina superior izquierda"
+ },
+ "Nala Rocks": {
+  "1": "Proyecto de Frontend desarrollado para NALA ROCKS como proyecto final para el bootcamp SoyHenry",
+  "2": "Desarrollo de módulo de RRHH para administrar los tiempos libres de los empleados. Incluye un formulario controlado, calendario,diagramas tipo tabla y gantt (descargables como tablas de excel) con un diseño responsive y traducción completa a Ingles y Portugués.",
+  "3": "Este proyecto fue desarrollado en conjunto con 4 estudiantes mas de Henry utilizando metodologías ágiles (SCRUM), tecnologías como JavaScript, React, Redux, Jest, Material UI, Sass y  Styled-Components. Transformando los diseños de Figma a componentes de React."
+ }
 
 }

@@ -15,6 +15,7 @@ background-color: rgb(20, 0, 25, 0.5);
 backdrop-filter: blur( 20.0px );
 
 h3{
+  margin:0;
   &:hover{
     color: purple;
   }

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Header } from "../../styled-components";
 
 export const Content = styled.div`
   background: none;
@@ -65,7 +64,7 @@ export const ContainerImg = styled.div`
   z-index: 1;
   height: fit-content;
   justify-content: center;
-  justify-self: baseline;
+  /* justify-self: baseline; */
   /* background: green; */
 `;
 export const CustomImg = styled.img`

@@ -16,5 +16,34 @@
   },
   "About": {
     "skillset": "Professional Skillset"
-  }
-}
+  },
+  "Landing":{
+    "header": "Get to know me",
+    "about1": "I‘m a Fullstack Developer passionate for tech. Trained in technologies like React, Typescript, Express and agile methodologies like SCRUM.",
+    "about2.1": "I like to learn new things through challenges and ",
+    "about2.2": "improve",
+    "about2.3": " myself everyday. What sets me apart is my ability to adapt to any sitution with ease.  ",
+    "about3": "I exceed the most in Frontend development.",
+    "about4.1": "If you need a developer who‘s ",
+    "about4.2": "creative",
+    "about4.3": ", likes to solve problems and always has a smile on his face, you can ",
+    "about4.4": "contact me ",
+    "about4.5": "here: "
+  },
+ "Henry Food":{
+   "1": "Individual Project developed for SoyHenry‘s Bootcamp.",
+   "2": "In this project, the users can search for any recipe (from the backend),sort them by score and alphabetical order, and filter them by diet (vegan, pescatarian, etc), as well as submitting a recipe of their own through a controlled form.",
+   "3" :"Additionally, all the recipes can be clicked to access the recipe‘s details page",
+   "4": "Frontend developed with JavaScript, React and Redux as State Manager. CSS and Styled-Components were used for the styles.",
+   "5": "Backend developed using PostreSQL, Express and Sequelize.It fetches data from both Spoonaculars API and its own database."
+ },
+ "Get News!": {
+   "1": "SPA developed with TypeScript, React, Redux and Material UI.",
+    "2": "It fetches data from NewsAPI and displays it in a paginated table, which can be sorted by date. The data can also be filtered in real time with the search bar. The user can visit each news article with the url button",
+    "3": "It includes a dark mode toggle which is located in top left corner. "
+ },
+ "Nala Rocks": {
+  "1": "Frontend Project developed for NALA ROCKS as a final project instance of SoyHenry‘s Bootcamp.",
+  "2": "Development of HR planning module (management of employee‘s time off). Including a controlled form, calendar, gantt and table charts (downloadble as excel files), with responsive desgin and full translation to Spanish and Portuguese.",
+  "3": "This project was developed with 4 other Henry students using agile methodologies (SCRUM), technologies like JavaScript, React, Redux, Jest (Unit Testing), Material UI, Sass, and Styled-Components, tranforming the company‘s Figma desgins to React Components."
+ }}

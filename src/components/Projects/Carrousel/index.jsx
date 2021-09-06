@@ -8,6 +8,7 @@ import * as S from './styles'
 
 const Carrousel = ({ data }) => {
   const [index, setIndex] = useState(0)
+  const { t } = useTranslation('common');
   const handleIndex = (direction) => {
     let newIndex;
     if (direction === "right") {
@@ -22,7 +23,8 @@ const Carrousel = ({ data }) => {
 
   const handleMouse = (e) => {
     const width = window.outerWidth / 6
-    if (e.screenX < width) {
+    // window.alert(`you clickd on ${e.screenX} and should be less than ${width * 2}`)
+    if (e.screenX < width * 2) {
       handleIndex('left')
     }
     if (e.screenX > width * 5) {
@@ -31,7 +33,6 @@ const Carrousel = ({ data }) => {
   }
 
 
-  const { t, i18n } = useTranslation('common');
   return (
     <S.Div onMouseDown={(e) => handleMouse(e)}>
       <S.Arrow position="left" onClick={() => handleIndex("left")}>
@@ -54,7 +55,7 @@ const Carrousel = ({ data }) => {
           }
         </S.Media>
         <S.TextArea>
-          {data[index].description.map(e => <p>{e}</p>)}
+          {data[index].description.map((e,i) => <p key={i}>{t(`${data[index].title}.${e}`)}</p>)}
         </S.TextArea>
         <S.Details>
           <Techs array={data[index].technologies} />

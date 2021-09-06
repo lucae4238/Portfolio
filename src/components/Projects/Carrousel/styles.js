@@ -123,10 +123,20 @@ a{
 `;
 
 export const Arrow = styled.div`
-margin: ${props => props.position === "left" ? "0 1rem 0 0" : "0 0 0 1rem"};
-height: 12rem;
-width: 3rem;
-
+/* margin: ${props => props.position === "left" ? "0 1rem 0 0" : "0 0 0 1rem"}; */
+img{
+  height: 5vh;
+  width: auto;
+  
+  @media screen and (max-width: 1200px){
+    position: fixed;
+    opacity: 0.2;
+    z-index: 300;
+    height: 10vw;
+    left: ${props => props.position === "left" ? "-3%" : "90%"};;
+    top: 50%;
+  }
+}
 `;
 
 export const TechArea = styled.div`

@@ -1,21 +1,24 @@
 import React from 'react'
-import IMG from '../../../../assets/Creative_Person.png'
+import { useTranslation } from "react-i18next";
+import IMG from '../../../../assets/sitting.png'
 import Contact from '../../../Contact'
 import {  /*LogosDiv,*/ Container, Content, ImageContainer, TextArea, CustomImg, CenteredHeader, ContactDiv } from './styles'
 
 const AboutMe = () => {
+  const { t } = useTranslation('common');
   return (
     <>
-      <CenteredHeader>Get to know me</CenteredHeader>
+      <CenteredHeader>{t("Landing.header")}</CenteredHeader>
       <Container>
         <Content>
           <TextArea>
-            <p>I‘m a Fullstack Developer passionate for tech. Trained in technologies like React, Typescript, Express and agile methodologies like SCRUM.</p>
-            <p>I like to learn new things through challenges and <strong>improve</strong> myself everyday.
-              What sets me apart is my ability to adapt to any sitution with ease. </p>
-            <p> I exceed the most in Front end development</p>
-            <p>If you need a developer who’s <strong>creative</strong>, likes to solve problems and always has a smile on his face,
-              you can <strong>contact</strong> me here: </p>
+            <p>{t("Landing.about1")}</p>
+            <p>{t("Landing.about2.1")} <strong>{t("Landing.about2.2")}</strong> {t("Landing.about2.3")}</p>
+            <p>{t("Landing.about3")}</p>
+            <p >
+              {t("Landing.about4.1")} <strong>{t("Landing.about4.2")}</strong>
+              {t("Landing.about4.3")}<strong>{t("Landing.about4.4")}</strong> {t("Landing.about4.5")}
+            </p>
             <br />
             <ContactDiv>
               <Contact fontSize="70px" position="inherit" />

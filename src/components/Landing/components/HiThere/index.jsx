@@ -2,13 +2,13 @@ import React from 'react'
 
 import { useTranslation } from "react-i18next";
 import { CustomImg, Container, Content, ContainerImg, Info, DynamicText } from './styles'
-import HomeImg from '../../../../assets/Home.svg'
+import HomeImg from '../../../../assets/computer.png'
 import { Header } from '../../../../styled-components'
 
 const HiThere = () => {
   
 
-  const { t, i18n } = useTranslation('common');
+  const { t} = useTranslation('common');
   return (
     <Container>
       <Content>

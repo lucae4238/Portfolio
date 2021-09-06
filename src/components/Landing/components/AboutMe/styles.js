@@ -38,7 +38,7 @@ padding: 2rem;
 
 @media screen and (max-width: 1200px){
 grid-template-columns: 1fr;
-grid-template-rows: 0.5fr 1fr;
+/* grid-template-rows: 0.5fr 1fr; */
 grid-template-areas: "info"
 "img";
 width: 100vw;
@@ -66,15 +66,20 @@ export const ImageContainer = styled.div`
 grid-area: img;
 z-index: 1;
 justify-self:center;
+@media screen and (max-width: 1200px){
+margin-top: 5vh;
+}
 `;
 export const CustomImg = styled.img`
-height: 25rem;
+/* height: 25rem; */
+max-height: 50vh;
 `;
 
 export const ContactDiv = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
+margin-top: 2rem;
 `;
 
 export const LogosDiv = styled.div`
