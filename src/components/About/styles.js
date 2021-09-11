@@ -53,7 +53,7 @@ export const Info = styled.div`
   padding: 2rem 2rem;
   .hover {
     :hover {
-      color:  purple 
+      color: purple;
     }
   }
 `;
@@ -105,4 +105,10 @@ export const SkillItem = styled.div`
   width: 10rem;
   height: 10rem;
   margin: 0.5rem;
+`;
+
+export const VideoContainer = styled.div`
+  justify-content: center;
+  display: flex;
+  margin: 5vh 0;
 `;
