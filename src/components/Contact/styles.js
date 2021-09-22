@@ -24,6 +24,7 @@ align-items: center;
 padding: 0;
   :hover{
     color: purple;
+    cursor: pointer;
   }
 }
 
