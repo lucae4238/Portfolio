@@ -58,6 +58,12 @@
   "1": "Proyecto de Frontend desarrollado para NALA ROCKS como proyecto final para el bootcamp SoyHenry",
   "2": "Desarrollo de módulo de RRHH para administrar los tiempos libres de los empleados. Incluye un formulario controlado, calendario,diagramas tipo tabla y gantt (descargables como tablas de excel) con un diseño responsive y traducción completa a Ingles y Portugués.",
   "3": "Este proyecto fue desarrollado en conjunto con 4 estudiantes mas de Henry utilizando metodologías ágiles (SCRUM), tecnologías como JavaScript, React, Redux, Jest, Material UI, Sass y  Styled-Components. Transformando los diseños de Figma a componentes de React."
+ },
+ "Discord Bot": {
+   "1": "Bot de discord que reproduce música",
+   "2": "Puede buscarse música, o agregarla por link de youtube o spotify",
+   "3": "Se puede saltear, agregar y borrar música de la lista de reproducción",
+   "4": "También se puede buscar la letra de la canción"
  }
 
 }
