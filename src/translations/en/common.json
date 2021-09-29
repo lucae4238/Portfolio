@@ -61,7 +61,7 @@
  },
  "Discord Bot": {
    "1": "Discord bot that can stream music,",
-   "2": "Music can be added by search or with youtube or spotify links",
+   "2": "Music can be added by title or with youtube or spotify links",
    "3": "You can skip add and delete music from the queue",
    "4": "Additionaly, lyrics for the song can be searched"
  }
