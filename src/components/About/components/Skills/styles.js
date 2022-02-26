@@ -42,6 +42,9 @@ border-radius: 10px;
 `;
 
 export const SkillItem = styled.div`
+.bg-white{
+  background: white;
+}
 /* border: 1px solid white; */
 display: flex;
 max-width: 7rem;

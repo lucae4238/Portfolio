@@ -31,7 +31,7 @@
   },
   "Landing":{
     "header": "Conóceme",
-    "about1": "Soy un Desarrollador FullStack apasionado por la tecnología. Con conocimientos en tecnologias como React, TypeScript, Express y metodologías ágiles como SCRUM.",
+    "about1": "Soy un Desarrollador FullStack apasionado por la tecnología. Actualmente, estoy trabajando en Lyracons como desarrollador de Frontend, llegando a nuevos limites y aprendiendo nuevas tecnologías.",
     "about2.1": "Me gusta aprender cosas nuevas a través de desafíos y ",
     "about2.2": "mejorar",
     "about2.3": " todos los días. Lo que me distingue del resto es mi habilidad para adaptarme a cualquier situacíon sin problema.",
@@ -49,10 +49,10 @@
    "4": "Frontend desarrollado usando JavaScript, React y Redux. CSS y Styled-Components fueron usados para los estilos.",
    "5": "Backend desarrollado ysando PostreSQL, Express y Sequelize, devuelve información de la API de Spoonaculars y su propia base de datos. "
  },
- "Get News!": {
-   "1": "SPA desarrollada con TypeScript, React, Redux y Material UI.",
-    "2": "Trae noticias de la NewsAPI y la muestra en una tabla paginada que puede ser ordenada por fecha. La información también puede ser filtrada dinámicamente con la barra de búsqueda. El usuario puede visitar cada árticulo con el botón de URL.",
-    "3": "Incluye un modo oscuro que puede ser activado en al esquina superior izquierda"
+ "Lyracons": {
+   "1": "Desarrollador de Frontend en Empresa de E-Commerce",
+    "2": "Desarrollo de VTEX CustomApps utilizando React.ts, GraphQL, generando aplicaciones internazionalizadas, reutilizables y escalables.",
+    "3": "Lo que mas me gusta de Lyracons es tener la oportunidad de trabajar en distintos proyectos constantemente, lo cual me permite superar mis límites y aprender cosas nuevas constantemete."
  },
  "Nala Rocks": {
   "1": "Proyecto de Frontend desarrollado para NALA ROCKS como proyecto final para el bootcamp SoyHenry",

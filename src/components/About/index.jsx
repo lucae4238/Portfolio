@@ -1,11 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { useTranslation } from "react-i18next";
-import ReactPlayer from 'react-player/youtube';
-import useResetScroll from '../../common/resetScroll'
-import CreativePerson from '../../assets/phone.png'
-import Skills from './components/Skills'
-import { ContainerImg, Content, CustomImg, Info, VideoContainer } from './styles'
-import { Container, Header } from '../../styled-components'
+import CreativePerson from '../../assets/phone.png';
+import useResetScroll from '../../common/resetScroll';
+import { Container, Header } from '../../styled-components';
+import Skills from './components/Skills';
+import { ContainerImg, Content, CustomImg, Info } from './styles';
 
 
 const About = () => {
@@ -31,14 +30,6 @@ const About = () => {
         </ContainerImg>
       </Content>
       <Skills />
-      <VideoContainer>
-        <ReactPlayer 
-        className="react-player"
-        // width="80vw"
-        // height="20vw"
-        url="https://youtu.be/tD4AFL8khp0" 
-        />
-      </VideoContainer>
     </Container>
   )
 }

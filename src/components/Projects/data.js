@@ -2,27 +2,10 @@ const mainUrl = "/videos";
 
 const data = [
   {
-    videoUrl: mainUrl + "/HenryFoodDemo.mp4",
-    title: "Henry Food",
-    description: ["1", "2", "3", "4", "5"],
-    link: "https://github.com/lucae4238/PI-Food-FT14a",
-    technologies: [
-      "JavaScript",
-      "React",
-      "Redux",
-      "Styled-Components",
-      "PostgreSQL",
-      "Sequelize",
-      "NodeJS & Express",
-      "CSS",
-    ],
-  },
-  {
-    videoUrl: mainUrl + "/GetNewsDemo.mp4",
-    title: "Get News!",
+    imgUrl: mainUrl + "/lyracons.png",
+    title: "Lyracons",
     description: ["1", "2", "3"],
-    link: "https://github.com/lucae4238/GetNews",
-    technologies: ["React", "Redux", "Material UI", "TypeScript", "CSS"],
+    technologies: ["React", "TypeScript","Graphql", "Tachyons", "CSS", "VTEX", "Git", "Vtex", "NodeJS & Express"],
   },
   {
     imgUrl: mainUrl + "/Nala.png",
@@ -37,6 +20,22 @@ const data = [
       "Sass",
       "Jest",
       "Material UI",
+      "CSS",
+    ],
+  },
+  {
+    videoUrl: mainUrl + "/HenryFoodDemo.mp4",
+    title: "Henry Food",
+    description: ["1", "2", "3", "4", "5"],
+    link: "https://github.com/lucae4238/PI-Food-FT14a",
+    technologies: [
+      "JavaScript",
+      "React",
+      "Redux",
+      "Styled-Components",
+      "PostgreSQL",
+      "Sequelize",
+      "NodeJS & Express",
       "CSS",
     ],
   },

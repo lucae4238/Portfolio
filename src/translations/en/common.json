@@ -31,7 +31,7 @@
   },
   "Landing":{
     "header": "Get to know me",
-    "about1": "I‘m a Fullstack Developer passionate for tech. Trained in technologies like React, Typescript, Express and agile methodologies like SCRUM.",
+    "about1": "I‘m a Fullstack Developer passionate for tech. Im currently working as a frontend developer at Lyracons, pushing myself to new challenges and experiences",
     "about2.1": "I like to learn new things through challenges and ",
     "about2.2": "improve",
     "about2.3": " myself everyday. What sets me apart is my ability to adapt to any sitution with ease.  ",
@@ -49,10 +49,10 @@
    "4": "Frontend developed with JavaScript, React and Redux as State Manager. CSS and Styled-Components were used for the styles.",
    "5": "Backend developed using PostreSQL, Express and Sequelize.It fetches data from both Spoonaculars API and its own database."
  },
- "Get News!": {
-   "1": "SPA developed with TypeScript, React, Redux and Material UI.",
-    "2": "It fetches data from NewsAPI and displays it in a paginated table, which can be sorted by date. The data can also be filtered in real time with the search bar. The user can visit each news article with the url button",
-    "3": "It includes a dark mode toggle which is located in top left corner. "
+ "Lyracons": {
+   "1": "Frontend Developer on E-Commerce buisness",
+    "2": "Development of VTEX CustomApps using React.ts, GraphQL, creating internationalized, reusable and scalable applications.",
+   "3": "What I like the most about my job is that Im always working on new projects, which allows me to keep learning and push myself to the limit."
  },
  "Nala Rocks": {
   "1": "Frontend Project developed for NALA ROCKS as a final project instance of SoyHenry‘s Bootcamp.",

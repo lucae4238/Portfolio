@@ -17,7 +17,7 @@ const Skills = () => {
             <SkillItem key={element.name} >
 
               <h4>{element.name}</h4>
-              <img width={element.name === "CSS" ? "70%" : "100%"} alt={element.name} src={element.url} />
+              <img width={element.name === "CSS" ? "70%" : "100%"} alt={element.name} className={element.name === "Tachyons" ? "bg-white" : ""} src={element.url} />
             </SkillItem>
           ))
         }
